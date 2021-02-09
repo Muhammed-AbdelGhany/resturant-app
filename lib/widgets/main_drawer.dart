@@ -37,7 +37,7 @@ class MainDrawer extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
             onTap: () {
-              Navigator.popAndPushNamed(context, '/');
+              Navigator.pushReplacementNamed(context, '/');
             },
           ),
           SizedBox(
@@ -56,7 +56,7 @@ class MainDrawer extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
             onTap: () {
-              Navigator.pushNamed(context, FiltersScreen.routeName);
+              Navigator.pushReplacementNamed(context, FiltersScreen.routeName);
             },
           ),
         ],
